@@ -1,12 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 body {
-  background: #00064c;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #00064c 1%, #007c9b 31%, #005a84 69%, #5979b7 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00064c', endColorstr='#5979b7', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   font-family: 'Barlow', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,7 +20,8 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main {
@@ -28,8 +31,6 @@ body {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   color: white;
   border-radius: 50px;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 136, 204, 0.6);
@@ -41,6 +42,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 993px) {
+  .main {
+    width: 880px;
+    margin: 30px;
+  }
 }
 
 .main__fnl {
@@ -64,13 +73,24 @@ body {
   font-size: 42px;
   line-height: 1.5;
   font-weight: 700;
-  margin-bottom: -20px;
+}
+
+@media (max-width: 993px) {
+  .main__fnl_name {
+    font-size: 30px;
+  }
 }
 
 .main__fnl_label {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 1.5;
   font-weight: normal;
+}
+
+@media (max-width: 993px) {
+  .main__fnl_label {
+    font-size: 18px;
+  }
 }
 
 .main__foto {
@@ -85,6 +105,7 @@ body {
   font-weight: 500;
   font-size: 26px;
   list-style-type: none;
+  margin-left: 20px;
 }
 
 .main__info_list {
@@ -120,6 +141,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: 20px;
 }
 
 .main__skills_list {
@@ -180,6 +202,18 @@ body {
   border-radius: 75px;
 }
 
+.text p,
+.text ul {
+  margin-top: 10px;
+}
+
+@media (max-width: 993px) {
+  .text {
+    width: 880px;
+    margin: 30px;
+  }
+}
+
 .experience a {
   color: white;
 }
@@ -225,7 +259,10 @@ body {
       justify-content: space-around;
 }
 
-.add h4 {
-  margin-top: -30px;
+@media (max-width: 993px) {
+  .add {
+    width: 880px;
+    margin: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
