@@ -16,10 +16,10 @@ body {
 
     //rgba(5, 103, 148, 0.753);
     font-family: 'Barlow', sans-serif;
-
     box-sizing: border-box;
     font-weight: 400;
     font-size: 20px;
+    
 
 }
 
@@ -28,12 +28,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-
-
 }
 
 .main {
     width: 100%;
+
     max-width: 1200px;
 
     background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
@@ -52,9 +51,20 @@ body {
     margin: 0 auto;
 
     @media (max-width:993px) {
-        width: 880px;
+        width: 100%;
+        max-width: 880px;
         margin: 30px;
         ;
+    }
+    @media (max-width:640px) {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        
+
+        
     }
 
     &__fnl {
@@ -98,6 +108,9 @@ body {
         font-size: 26px;
         list-style-type: none;
         margin-left: 20px;
+        @media (max-width:640px){
+            margin: 10px;
+        }
 
         &_list {
             margin-top: 5px;
@@ -195,11 +208,18 @@ body {
     }
 
     @media (max-width:993px) {
-        width: 880px;
+        width: 100%;
+        max-width: 880px;
         margin: 30px;
     }
+    @media (max-width:640px) {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }  
 }
-
 .experience {
     a {
         color: white;
@@ -242,9 +262,17 @@ body {
     }
 
     @media (max-width:993px) {
-        width: 880px;
+        width: 100%;
+        max-width: 880px;
         margin: 30px;
     }
+    @media (max-width:640px) {
+        width: 100%;
+        max-width: 600px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }  
 
 
 }
